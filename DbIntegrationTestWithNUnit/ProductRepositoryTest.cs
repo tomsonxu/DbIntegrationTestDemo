@@ -26,7 +26,7 @@ namespace DbIntegrationTestWithNUnit
 
             using (var context = new MyContext())
             {
-                Assert.AreEqual(2, context.Products.Count());
+                Assert.AreEqual(1, context.Products.Count());
             }
         }
     }
