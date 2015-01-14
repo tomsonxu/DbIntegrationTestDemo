@@ -9,9 +9,7 @@ namespace MainApp
 {
     public class MyContext : DbContext
     {
-        public MyContext() : base("DemoDB") {
-            var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
-        }
+        public MyContext() : base("DemoDB") {}
         public DbSet<Product> Products { get; set; }
     }
 }
